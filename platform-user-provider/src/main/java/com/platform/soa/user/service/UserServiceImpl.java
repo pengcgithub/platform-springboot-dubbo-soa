@@ -31,7 +31,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserBean findById(String id) {
-        return userDao.findOne(id);
+        return userDao.findById(id).orElse(null);
     }
 
 }
