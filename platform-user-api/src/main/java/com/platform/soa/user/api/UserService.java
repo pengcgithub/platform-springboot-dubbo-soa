@@ -1,5 +1,7 @@
 package com.platform.soa.user.api;
 
+import com.platform.soa.user.domain.UserBean;
+
 /**
  * <br/>
  *
@@ -9,6 +11,6 @@ package com.platform.soa.user.api;
  */
 public interface UserService {
 
-
+    UserBean findById(String id);
 
 }
