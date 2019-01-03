@@ -13,6 +13,7 @@
         <module>platform-parent</module>
         <module>platform-user-api</module>
         <module>platform-user-provider</module>
+        <module>platform-user-consumer</module>
     </modules>
 
 </project>
