@@ -19,7 +19,7 @@
         <mysql-connector-java.version>5.1.39</mysql-connector-java.version>
         <lombok.version>1.18.2</lombok.version>
         <zookeeper.version>3.4.13</zookeeper.version>
-        <fastjson.version>1.2.12</fastjson.version>
+        <fastjson.version>1.2.31</fastjson.version>
     </properties>
 
     <dependencyManagement>
