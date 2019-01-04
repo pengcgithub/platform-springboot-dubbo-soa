@@ -13,11 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @see com.platform.soa.user.service
  * @since 2019/1/3
  */
-//@Service(
-//        version = "${platform.service.version}",
-//        protocol = {"dubbo", "rest"},
-//        registry = "${dubbo.registry.id}"
-//)
 @Service(
         version = "${platform.service.version}",
         application = "${dubbo.application.id}",
@@ -31,7 +26,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserBean findById(String id) {
-        return userDao.findById(id).orElse(null);
+        return userDao.findById(id).get();
+//        UserBean userBean = new UserBean();
+//        userBean.setUserName("pengc");
+//        userBean.setUserPhone("18262632337");
+//        return userBean;
     }
 
 }
