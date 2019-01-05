@@ -12,6 +12,9 @@
     <artifactId>platform-user-provider</artifactId>
     <packaging>jar</packaging>
 
+    <name>platform-user-consumer</name>
+    <description>Demo project for Spring Boot</description>
+
     <properties>
         <java.version>1.8</java.version>
         <dubbo.boot.version>0.2.1-SNAPSHOT</dubbo.boot.version>

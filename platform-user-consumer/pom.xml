@@ -10,7 +10,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>platform-user-consumer</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+
     <name>platform-user-consumer</name>
     <description>Demo project for Spring Boot</description>
 
@@ -86,6 +86,7 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
+        <!-- spring core -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>

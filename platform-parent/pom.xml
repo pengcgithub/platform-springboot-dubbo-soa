@@ -16,14 +16,24 @@
     <packaging>pom</packaging>
 
     <properties>
+        <spring.version>5.1.3.RELEASE</spring.version>
         <mysql-connector-java.version>5.1.39</mysql-connector-java.version>
         <lombok.version>1.18.2</lombok.version>
         <zookeeper.version>3.4.13</zookeeper.version>
         <fastjson.version>1.2.31</fastjson.version>
+        <swagger.version>2.2.2</swagger.version>
+        <dubbo.version>2.6.5</dubbo.version>
+        <dubbo.boot.version>0.2.0</dubbo.boot.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- Spring -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
             <!-- mysql-connector -->
             <dependency>
                 <groupId>mysql</groupId>
@@ -41,24 +51,24 @@
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
-                <version>2.2.2</version>
+                <version>${swagger.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger-ui</artifactId>
-                <version>2.2.2</version>
+                <version>${swagger.version}</version>
             </dependency>
             <!-- Dubbo dependency -->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
-                <version>2.6.5</version>
+                <version>${dubbo.version}</version>
             </dependency>
             <!-- Dubbo Spring Boot Starter -->
             <dependency>
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>0.2.0</version>
+                <version>${dubbo.boot.version}</version>
             </dependency>
             <!-- Spring Context Extras -->
             <dependency>
@@ -112,11 +122,6 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>3.5</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
-                <version>5.1.3.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
