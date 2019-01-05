@@ -8,45 +8,47 @@
 - dubbo 2.6.5
 - dubbo-spring-boot-starter 0.2.0
 - spring-data-jpa
+- swagger 2.2.2
 
 ## 微服务体系
 
-#### 分布式事务
+### *已整合*
 
-- [hmily](https://github.com/yu199195/hmily)
+- spring-boot + dubbo基础环境
 
-#### 服务注册中心
+### *计划整合*
 
-- [Nacos](https://github.com/alibaba/Nacos)
+- 分布式事务
+	- [hmily](https://github.com/yu199195/hmily)
 
-#### 服务监控
+- 服务注册中心
+	- [Nacos](https://github.com/alibaba/Nacos)
 
-#### 服务网关
+- 服务监控
 
-- [soul](https://github.com/Dromara/soul)
+- 服务网关
+	- [soul](https://github.com/Dromara/soul)
 
-#### 服务熔断
+- 服务熔断
+	- [Sentinel](https://github.com/alibaba/Sentinel)
+	- [Hystrix](https://github.com/Netflix/Hystrix)
 
-- [Sentinel](https://github.com/alibaba/Sentinel)
-- [Hystrix](https://github.com/Netflix/Hystrix)
+- 服务配置中心
+	- [apollo](https://github.com/ctripcorp/apollo)
 
-#### 服务配置中心
+- 链路跟踪
+	- [zipkin](https://github.com/openzipkin/zipkin)
 
-- [apollo](https://github.com/ctripcorp/apollo)
+- 定时任务
+	- [xxl-job](https://github.com/xuxueli/xxl-job)
 
-#### 链路跟踪
+- 日志系统
+	- ELK
 
-- [zipkin](https://github.com/openzipkin/zipkin)
+- 分库分表
+	- [sharding-sphere](https://github.com/sharding-sphere/sharding-sphere)
 
-#### 定时任务
-
-- [xxl-job](https://github.com/xuxueli/xxl-job)
-
-#### 日志系统
-
-- ELK
-
-#### Docker容器化
+- Docker容器化
 
 ## 问题记录
 
