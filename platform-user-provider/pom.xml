@@ -12,7 +12,7 @@
     <artifactId>platform-user-provider</artifactId>
     <packaging>jar</packaging>
 
-    <name>platform-user-consumer</name>
+    <name>platform-user-provider</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -74,6 +74,23 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
+        </dependency>
+        <!-- 解决启动报 java.lang.NoClassDefFoundError: org/apache/curator/RetryPolicy -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+            <type>bundle</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <type>bundle</type>
+        </dependency>
+        <!-- Dubbo Nacos registry dependency -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo-registry-nacos</artifactId>
+            <version>0.0.1</version>
         </dependency>
     </dependencies>
 
