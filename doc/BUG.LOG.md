@@ -6,6 +6,9 @@
 2、springboot2.0.1 集成dubbo时启动包错找不到java.lang.NoClassDefFoundError: io/netty/channel/nio/NioEventLoopGrou
 **解决方法：**[https://blog.csdn.net/qq_30264689/article/details/85068193](https://blog.csdn.net/qq_30264689/article/details/85068193)
 
+3、Dubbo 2.6.5启动报java.lang.NoClassDefFoundError: org/apache/curator/RetryPolicy
+**解决方法：**[https://blog.csdn.net/q283614346/article/details/85042152](https://blog.csdn.net/q283614346/article/details/85042152)
+
 
 ## 参考资料
 
