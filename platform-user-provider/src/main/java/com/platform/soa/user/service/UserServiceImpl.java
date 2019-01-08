@@ -5,6 +5,8 @@ import com.platform.soa.user.api.UserService;
 import com.platform.soa.user.dao.UserDao;
 import com.platform.soa.user.domain.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import java.util.List;
+import java.util.Optional;
 
 /**
  * <br/>
@@ -26,11 +28,23 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserBean findById(String id) {
-        return userDao.findById(id).get();
-//        UserBean userBean = new UserBean();
-//        userBean.setUserName("pengc");
-//        userBean.setUserPhone("18262632337");
-//        return userBean;
+        Optional<UserBean> userBeanOptional = userDao.findById(id);
+        return userBeanOptional.isPresent() ? userBeanOptional.get() : null;
+    }
+
+    @Override
+    public Boolean saveUser(UserBean userBean) {
+        try {
+            userDao.save(userBean);
+        } catch (Exception e) {
+            throw e;
+        }
+        return Boolean.TRUE;
+    }
+
+    @Override
+    public List<UserBean> listUser() {
+        return (List<UserBean>) userDao.findAll();
     }
 
 }

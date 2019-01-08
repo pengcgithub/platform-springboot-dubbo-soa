@@ -1,6 +1,7 @@
 package com.platform.soa.user.api;
 
 import com.platform.soa.user.domain.UserBean;
+import java.util.List;
 
 /**
  * <br/>
@@ -12,5 +13,9 @@ import com.platform.soa.user.domain.UserBean;
 public interface UserService {
 
     UserBean findById(String id);
+
+    Boolean saveUser(UserBean userBean);
+
+    List<UserBean> listUser();
 
 }
