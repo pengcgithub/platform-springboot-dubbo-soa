@@ -16,13 +16,16 @@
 
 - spring-boot + dubbo基础环境
 
+- 服务注册中心
+	- [Nacos](https://github.com/alibaba/Nacos)
+
 ### *计划整合*
 
 - 分布式事务
 	- [hmily](https://github.com/yu199195/hmily)
 
-- 服务注册中心
-	- [Nacos](https://github.com/alibaba/Nacos)
+- 服务管理
+    - [dubbo-ops](https://github.com/apache/incubator-dubbo-ops)
 
 - 服务监控
 
