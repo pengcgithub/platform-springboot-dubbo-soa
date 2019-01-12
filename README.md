@@ -23,6 +23,7 @@
 
 - 分布式事务
 	- [hmily](https://github.com/yu199195/hmily)
+	- [fescar](https://github.com/alibaba/fescar)
 
 - 服务管理
     - [dubbo-ops](https://github.com/apache/incubator-dubbo-ops)
