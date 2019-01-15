@@ -4,7 +4,7 @@ import com.platform.soa.user.domain.UserBean;
 import java.util.List;
 
 /**
- * <br/>
+ * 用户业务逻辑<br/>
  *
  * @author pengc
  * @see com.platform.soa.user.api

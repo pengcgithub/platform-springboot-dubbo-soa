@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <br/>
+ * 用户实体<br/>
  *
  * @author pengc
  * @see com.platform.soa.user.domain
