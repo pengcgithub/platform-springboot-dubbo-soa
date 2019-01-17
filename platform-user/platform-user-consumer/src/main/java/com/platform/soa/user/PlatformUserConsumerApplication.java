@@ -19,6 +19,12 @@ public class PlatformUserConsumerApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(PlatformUserConsumerApplication.class, args);
+        // Fail to start qos server
+//        ApplicationConfig config = new ApplicationConfig();
+//        config.setName("gps_web");
+//        config.setQosEnable(false);
+//        config.setQosAcceptForeignIp(false);
+//        config.setQosPort(8000);
     }
 
 }
