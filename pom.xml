@@ -11,9 +11,8 @@
 
     <modules>
         <module>platform-parent</module>
-        <module>platform-user-api</module>
-        <module>platform-user-provider</module>
-        <module>platform-user-consumer</module>
+        <module>platform-web-config</module>
+        <module>platform-user</module>
     </modules>
 
 </project>
