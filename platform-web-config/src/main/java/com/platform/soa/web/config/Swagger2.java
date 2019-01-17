@@ -1,4 +1,4 @@
-package com.platform.soa.user.config;
+package com.platform.soa.web.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

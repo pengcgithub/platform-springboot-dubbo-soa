@@ -1,4 +1,4 @@
-package com.platform.soa.user.config;
+package com.platform.soa.web.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +10,7 @@ import org.springframework.web.filter.CorsFilter;
  * 自定义跨域配置<br/>
  *
  * @author pengc
- * @see com.platform.soa.user.config
+ * @see com.platform.soa.web.config
  * @since 2017/9/26
  */
 @Configuration
