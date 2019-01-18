@@ -1,7 +1,6 @@
 package com.platform.soa.user.domain;
 
 import lombok.Data;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
