@@ -22,6 +22,9 @@
 
 ### *计划整合*
 
+- 分布式ID
+    - twitter-archive/snowflake
+
 - 分布式事务
 	- [hmily](https://github.com/yu199195/hmily)
 	- [fescar](https://github.com/alibaba/fescar)
