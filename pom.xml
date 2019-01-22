@@ -13,6 +13,7 @@
         <module>platform-parent</module>
         <module>platform-web-config</module>
         <module>platform-user</module>
+        <module>platform-common</module>
     </modules>
 
 </project>
