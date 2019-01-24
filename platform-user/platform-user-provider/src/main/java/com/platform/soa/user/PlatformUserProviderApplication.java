@@ -9,6 +9,13 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * platform-user-provider启动类<br/>
+ *
+ * @author pengc
+ * @see com.platform.soa.order.service
+ * @since 2019/1/3
+ */
 @EnableDubbo
 @EnableTransactionManagement
 @ComponentScan(basePackages = "com.platform.soa.user.service")
@@ -18,10 +25,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class PlatformUserProviderApplication {
 
     public static void main(String[] args) {
-//        SpringApplication.run(PlatformUserProviderApplication.class, args);
-        new SpringApplicationBuilder(PlatformUserProviderApplication.class)
+        SpringApplication.run(PlatformUserProviderApplication.class, args);
+//        new SpringApplicationBuilder(PlatformUserProviderApplication.class)
 //                .web(false)
-                .run(args);
+//                .run(args);
     }
 
 }
