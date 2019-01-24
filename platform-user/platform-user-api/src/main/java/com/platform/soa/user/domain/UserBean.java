@@ -3,6 +3,7 @@ package com.platform.soa.user.domain;
 import lombok.Data;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Date;
  */
 @Data
 @Entity
-@Table(name = "T_USER")
+@Table(name = "t_user")
 public class UserBean implements Serializable {
 
     @Id
@@ -33,7 +34,10 @@ public class UserBean implements Serializable {
     @Column(name = "modify_time")
     private Date modifyTime;
 
-    @Column(name = "score", length = 5)
-    private Integer score;
+    @Column(name = "balance")
+    private BigDecimal balance;
+
+    @Column(name = "freeze_amount")
+    private BigDecimal freezeAmount;
 
 }
