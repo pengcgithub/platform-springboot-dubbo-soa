@@ -30,4 +30,7 @@ public class InventoryBean implements Serializable {
     @Column(name = "lock_inventory")
     private Integer lockInventory;
 
+    @Transient
+    private Integer deductionInventory;
+
 }

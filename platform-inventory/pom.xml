@@ -15,6 +15,7 @@
 
     <modules>
         <module>platform-inventory-api</module>
+        <module>platform-inventory-provider</module>
     </modules>
 
 </project>
