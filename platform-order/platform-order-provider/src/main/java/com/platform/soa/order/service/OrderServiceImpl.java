@@ -15,12 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @since 2019/1/24
  */
 @Slf4j
-@Service(
-        version = "${platform.service.version}",
-        application = "${dubbo.application.id}",
-        protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}"
-)
+@Service(version = "${platform.service.version}")
 public class OrderServiceImpl implements OrderService {
 
     @Autowired

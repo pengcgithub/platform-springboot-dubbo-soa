@@ -15,12 +15,14 @@ import java.util.Optional;
  * @see com.platform.soa.user.service
  * @since 2019/1/3
  */
-@Service(
-        version = "${platform.service.version}",
-        application = "${dubbo.application.id}",
-        protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}"
-)
+//@Service(
+//        version = "${platform.service.version}",
+//        application = "${dubbo.application.id}",
+//        protocol = "${dubbo.protocol.id}",
+//        registry = "${dubbo.registry.id}"
+//)
+
+@Service(version = "${platform.service.version}")
 public class UserServiceImpl implements UserService {
 
     @Autowired
