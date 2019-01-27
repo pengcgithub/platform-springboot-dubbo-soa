@@ -21,7 +21,7 @@
 	- [Nacos](https://github.com/alibaba/Nacos)
 	
 - 服务管理
-    - [dubbo-ops](https://github.com/apache/incubator-dubbo-ops)
+    - [dubbo-ops](https://github.com/apache/incubator-dubbo-ops)，暂不支持Nacos。
 
 ### *计划整合*
 
