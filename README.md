@@ -61,6 +61,7 @@
 ## 文档目录
 
 - [BUG.LOG.md](./doc/BUG.LOG.md)
+- [dubbo-ops.md](./doc/dubbo-ops.md)
 
 ## 联系(Contact)
 
