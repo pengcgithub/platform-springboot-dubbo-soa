@@ -24,6 +24,7 @@
         <swagger.version>2.2.2</swagger.version>
         <dubbo.version>2.6.5</dubbo.version>
         <dubbo.boot.version>0.2.0</dubbo.boot.version>
+        <hmily.version>2.0.1-RELEASE</hmily.version>
     </properties>
 
     <dependencyManagement>
@@ -136,6 +137,17 @@
                 <artifactId>curator-recipes</artifactId>
                 <version>4.0.1</version>
                 <type>bundle</type>
+            </dependency>
+            <!-- Hmily Transaction -->
+            <dependency>
+                <groupId>org.dromara</groupId>
+                <artifactId>hmily-spring-boot-starter-dubbo</artifactId>
+                <version>${hmily.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dromara</groupId>
+                <artifactId>hmily-dubbo</artifactId>
+                <version>${hmily.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
