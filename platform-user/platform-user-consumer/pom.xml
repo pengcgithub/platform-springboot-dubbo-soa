@@ -110,6 +110,11 @@
             <artifactId>platform-web-config</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!-- hmily-spring-boot-starter-dubbo -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>hmily-spring-boot-starter-dubbo</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

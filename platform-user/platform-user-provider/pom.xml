@@ -91,6 +91,11 @@
             <artifactId>dubbo-registry-nacos</artifactId>
             <version>0.0.1</version>
         </dependency>
+        <!-- hmily-dubbo -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>hmily-dubbo</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
