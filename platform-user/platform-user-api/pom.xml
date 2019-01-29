@@ -13,10 +13,12 @@
     <packaging>jar</packaging>
 
     <dependencies>
+        <!-- mysql-connector -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!-- lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -24,6 +26,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!-- hmily-annotation -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>hmily-annotation</artifactId>
         </dependency>
     </dependencies>
 

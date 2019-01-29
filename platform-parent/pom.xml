@@ -149,6 +149,13 @@
                 <artifactId>hmily-dubbo</artifactId>
                 <version>${hmily.version}</version>
             </dependency>
+            <!-- hmily-annotation -->
+            <dependency>
+                <groupId>org.dromara</groupId>
+                <artifactId>hmily-annotation</artifactId>
+                <version>${hmily.version}</version>
+                <scope>compile</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

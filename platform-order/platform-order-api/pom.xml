@@ -12,6 +12,7 @@
     <artifactId>platform-order-api</artifactId>
 
     <dependencies>
+        <!-- lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -19,6 +20,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!-- hmily-annotation -->
+        <dependency>
+            <groupId>org.dromara</groupId>
+            <artifactId>hmily-annotation</artifactId>
         </dependency>
     </dependencies>
 

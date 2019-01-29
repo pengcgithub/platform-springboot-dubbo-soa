@@ -9,6 +9,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>platform-inventory-provider</artifactId>
+    <packaging>jar</packaging>
 
     <name>platform-inventory-provider</name>
     <description>Demo project for Spring Boot</description>
