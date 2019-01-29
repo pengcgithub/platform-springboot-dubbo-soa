@@ -16,6 +16,9 @@
 
 **解决方法：**[https://blog.csdn.net/u012988901/article/details/84503672](https://blog.csdn.net/u012988901/article/details/84503672)
 
+5、com.mongodb.MongoSocketOpenException: Exception opening socket，分析估计是由于引入Hmily分布式分布式框架导致的。
+
+**解决方法：**[https://blog.csdn.net/qq_30558809/article/details/79985059](https://blog.csdn.net/qq_30558809/article/details/79985059)
 
 ## 参考资料
 
