@@ -1,0 +1,89 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: platform-user-provider
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://106.15.92.216:3306/platform-user?charset=utf8mb4&useSSL=false
+    username: root
+    password: 123456
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 10
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  freemarker:
+    checkTemplateLocation: false
+
+platform:
+  service:
+    version: 1.0.0
+
+dubbo:
+  scan:
+    base-packages: com.platform.soa.user.service
+  application:
+    id: platform-user-provider
+    name: platform-user-provider
+    timeout: 10000
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20881
+  registry:
+    id: my-registry
+    address: nacos://127.0.0.1:8848
+    timeout: 10000
+
+management:
+  endpoint:
+    dubbo:
+      enabled: true
+    dubboShutdown:
+      enabled: true
+    dubboConfigs:
+      enabled: true
+    dubboServices:
+      enabled: true
+    dubboReferences:
+      enabled: true
+    dubboProperties:
+      enabled: true
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: load,threadpool
+
+org:
+  dromara:
+    hmily:
+      serializer: kryo
+      recoverDelayTime: 128
+      retryMax: 30
+      scheduledDelay: 128
+      scheduledThreadMax: 10
+      repositorySupport: db
+      started: false
+      hmilyDbConfig:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://106.15.92.216:3306/tcc?useUnicode=true&amp;characterEncoding=utf8
+        username: root
+        password: 123456
+
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        web: error
+      apache:
+        cxf: off
+    com:
+      platform:
+        soa: debug
