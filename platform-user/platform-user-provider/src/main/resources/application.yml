@@ -12,11 +12,11 @@ spring:
     hikari:
       maximum-pool-size: 20
       minimum-idle: 10
-  jpa:
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-    show-sql: true
-    hibernate:
-      ddl-auto: update
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
   freemarker:
     checkTemplateLocation: false
 
@@ -87,3 +87,19 @@ logging:
     com:
       platform:
         soa: debug
+
+mybatis:
+  type-aliases-package: com.platform.soa.user.domain
+  mapper-locations: classpath:mapper/*.xml
+
+mapper:
+  mappers:
+    - com.platform.soa.common.mybatis.MyMapper
+  not-empty: false
+  identity: MYSQL
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
