@@ -8,6 +8,9 @@
 - dubbo 2.6.5
 - dubbo-spring-boot-starter 0.2.0
 - spring-data-jpa
+- mybatis
+- [mapper](https://github.com/abel533/Mapper)
+- [Mybatis-PageHelper](https://github.com/pagehelper/Mybatis-PageHelper)
 - swagger 2.2.2
 
 
