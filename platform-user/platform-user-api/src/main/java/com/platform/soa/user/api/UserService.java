@@ -1,6 +1,8 @@
 package com.platform.soa.user.api;
 
 import com.platform.soa.user.domain.UserBean;
+import org.dromara.hmily.annotation.Hmily;
+
 import java.util.List;
 
 /**
@@ -14,6 +16,7 @@ public interface UserService {
 
     UserBean findById(String id);
 
+    @Hmily
     Boolean saveUser(UserBean userBean);
 
     List<UserBean> listUser();

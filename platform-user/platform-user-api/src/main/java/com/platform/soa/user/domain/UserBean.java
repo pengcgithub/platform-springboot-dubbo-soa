@@ -14,12 +14,11 @@ import java.util.Date;
  * @since 2018/12/27
  */
 @Data
-@Entity
 @Table(name = "t_user")
 public class UserBean implements Serializable {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     @Column(length = 25, name = "user_name")
