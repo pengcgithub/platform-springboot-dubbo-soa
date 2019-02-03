@@ -46,6 +46,7 @@
 
 - 服务配置中心
 	- [apollo](https://github.com/ctripcorp/apollo)
+	- [Nacos](https://github.com/alibaba/Nacos)
 
 - 链路跟踪
 	- [zipkin](https://github.com/openzipkin/zipkin)
