@@ -15,6 +15,20 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <repositories>
+        <repository>
+            <id>apache.snapshots.https</id>
+            <name>Apache Development Snapshot Repository</name>
+            <url>https://repository.apache.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <properties>
         <spring.version>5.1.3.RELEASE</spring.version>
         <mysql-connector-java.version>5.1.39</mysql-connector-java.version>
@@ -22,9 +36,10 @@
         <zookeeper.version>3.4.13</zookeeper.version>
         <fastjson.version>1.2.31</fastjson.version>
         <swagger.version>2.2.2</swagger.version>
-        <dubbo.version>2.6.5</dubbo.version>
-        <dubbo.boot.version>0.2.0</dubbo.boot.version>
+        <dubbo.version>2.7.1</dubbo.version>
+        <dubbo.boot.version>2.7.1</dubbo.boot.version>
         <hmily.version>2.0.1-RELEASE</hmily.version>
+        <nacos.version>2.7.1</nacos.version>
     </properties>
 
     <dependencyManagement>
@@ -61,13 +76,27 @@
             </dependency>
             <!-- Dubbo dependency -->
             <dependency>
-                <groupId>com.alibaba</groupId>
+                <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.servlet</groupId>
+                        <artifactId>servlet-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- Dubbo Spring Boot Starter -->
             <dependency>
-                <groupId>com.alibaba.boot</groupId>
+                <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
                 <version>${dubbo.boot.version}</version>
             </dependency>
@@ -93,13 +122,13 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo-registry-nacos</artifactId>
-                <version>2.6.5-SNAPSHOT</version>
+                <version>2.7.1</version>
             </dependency>
             <!-- Nacos Spring dependency -->
             <dependency>
                 <groupId>com.alibaba.nacos</groupId>
                 <artifactId>nacos-spring-context</artifactId>
-                <version>0.1.0-RC2</version>
+                <version>>0.2.3-RC1</version>
             </dependency>
             <!-- Zookeeper -->
             <dependency>

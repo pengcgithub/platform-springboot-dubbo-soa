@@ -1,12 +1,12 @@
 package com.platform.soa.user.controller;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.platform.soa.inventory.api.InventoryService;
 import com.platform.soa.inventory.domain.InventoryBean;
 import com.platform.soa.user.api.UserService;
 import com.platform.soa.user.domain.UserBean;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

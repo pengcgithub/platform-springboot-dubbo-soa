@@ -1,10 +1,10 @@
 package com.platform.soa.user.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.platform.soa.user.api.UserService;
 import com.platform.soa.user.domain.UserBean;
 import com.platform.soa.user.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.Service;
 import org.dromara.hmily.annotation.Hmily;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.math.BigDecimal;
