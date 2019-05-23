@@ -72,9 +72,13 @@
         <!--</dependency>-->
         <!-- Dubbo Nacos registry dependency -->
         <dependency>
-            <groupId>com.alibaba</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-registry-nacos</artifactId>
-            <version>0.0.1</version>
+        </dependency>
+        <!-- nacos-client -->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
         </dependency>
         <!-- lombok -->
         <dependency>

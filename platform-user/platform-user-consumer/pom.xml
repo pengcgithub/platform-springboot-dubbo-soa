@@ -100,9 +100,13 @@
         <!--</dependency>-->
         <!-- Dubbo Nacos registry dependency -->
         <dependency>
-            <groupId>com.alibaba</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-registry-nacos</artifactId>
-            <version>0.0.1</version>
+        </dependency>
+        <!-- nacos-client -->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
         </dependency>
         <!-- web-config -->
         <dependency>
@@ -111,10 +115,10 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!-- hmily-spring-boot-starter-dubbo -->
-        <dependency>
-            <groupId>org.dromara</groupId>
-            <artifactId>hmily-spring-boot-starter-dubbo</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.dromara</groupId>-->
+            <!--<artifactId>hmily-spring-boot-starter-dubbo</artifactId>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>

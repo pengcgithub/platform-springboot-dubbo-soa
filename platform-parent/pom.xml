@@ -40,6 +40,7 @@
         <dubbo.boot.version>2.7.1</dubbo.boot.version>
         <hmily.version>2.0.1-RELEASE</hmily.version>
         <nacos.version>2.7.1</nacos.version>
+        <nacos.client.version>1.0.0</nacos.client.version>
     </properties>
 
     <dependencyManagement>
@@ -120,15 +121,21 @@
             </dependency>
             <!-- Dubbo Nacos registry dependency -->
             <dependency>
-                <groupId>com.alibaba</groupId>
+                <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-registry-nacos</artifactId>
-                <version>2.7.1</version>
+                <version>${nacos.version}</version>
             </dependency>
             <!-- Nacos Spring dependency -->
             <dependency>
                 <groupId>com.alibaba.nacos</groupId>
                 <artifactId>nacos-spring-context</artifactId>
                 <version>>0.2.3-RC1</version>
+            </dependency>
+            <!-- nacos-client -->
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>${nacos.client.version}</version>
             </dependency>
             <!-- Zookeeper -->
             <dependency>
