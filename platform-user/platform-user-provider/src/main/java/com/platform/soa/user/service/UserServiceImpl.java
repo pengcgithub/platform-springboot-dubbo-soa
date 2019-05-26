@@ -1,5 +1,7 @@
 package com.platform.soa.user.service;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.platform.soa.user.api.UserService;
 import com.platform.soa.user.domain.UserBean;
 import com.platform.soa.user.mapper.UserMapper;
@@ -31,6 +33,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
+    @HystrixCommand(commandProperties = {
+            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"),
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000") })
     @Override
     public UserBean findById(String id) {
         UserBean userBean = userMapper.selectByPrimaryKey(id);

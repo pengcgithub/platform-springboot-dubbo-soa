@@ -87,17 +87,6 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
         </dependency>
-        <!-- 解决启动报 java.lang.NoClassDefFoundError: org/apache/curator/RetryPolicy -->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.curator</groupId>-->
-            <!--<artifactId>curator-framework</artifactId>-->
-            <!--<type>bundle</type>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.curator</groupId>-->
-            <!--<artifactId>curator-recipes</artifactId>-->
-            <!--<type>bundle</type>-->
-        <!--</dependency>-->
         <!-- Dubbo Nacos registry dependency -->
         <dependency>
             <groupId>org.apache.dubbo</groupId>
@@ -119,6 +108,11 @@
             <!--<groupId>org.dromara</groupId>-->
             <!--<artifactId>hmily-spring-boot-starter-dubbo</artifactId>-->
         <!--</dependency>-->
+        <!-- hystrix -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

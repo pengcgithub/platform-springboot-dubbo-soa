@@ -4,6 +4,7 @@ import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import tk.mybatis.spring.annotation.MapperScan;
@@ -17,6 +18,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  */
 @MapperScan(basePackages = "com.platform.soa.user.mapper")
 @EnableDubbo
+@EnableHystrix
 @EnableTransactionManagement
 @ComponentScan(basePackages = "com.platform.soa.user.service")
 //@EnableJpaRepositories(basePackages = "com.platform.soa.user.dao")

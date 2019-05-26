@@ -1,5 +1,6 @@
 package com.platform.soa.user.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.platform.soa.inventory.api.InventoryService;
 import com.platform.soa.inventory.domain.InventoryBean;
 import com.platform.soa.user.api.UserService;
@@ -32,6 +33,10 @@ public class UserController {
     @Reference(version = "${platform.service.version}")
     private InventoryService inventoryService;
 
+    public UserController() {
+    }
+
+    @HystrixCommand(fallbackMethod = "reliable")
     @ApiOperation(value="获取用户详细信息", notes="根据url的id来获取用户详细信息")
     @GetMapping(value = "/user/findBy/{id}")
     public UserBean findById(@PathVariable("id") String id) {
@@ -47,6 +52,17 @@ public class UserController {
             log.error(e.getMessage());
             return null;
         }
+    }
+
+    /**
+     * 容错用户查询<br/>
+     * @param id 用户id
+     * @return {@link UserBean}
+     */
+    public UserBean reliable(String id) {
+        UserBean user = new UserBean();
+        user.setId(id);
+        return user;
     }
 
 }

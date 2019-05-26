@@ -210,6 +210,12 @@
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>1.2.9</version>
             </dependency>
+            <!-- hystrix -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+                <version>1.4.4.RELEASE</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
