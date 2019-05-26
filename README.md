@@ -5,8 +5,8 @@
 ## 基础环境
 
 - spring-boot 2.1.1.RELEASE
-- dubbo 2.6.5
-- dubbo-spring-boot-starter 0.2.0
+- dubbo 2.7.1
+- dubbo-spring-boot-starter 2.7.1
 - spring-data-jpa
 - mybatis
 - [mapper](https://github.com/abel533/Mapper)
