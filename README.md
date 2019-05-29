@@ -24,7 +24,10 @@
 	- [Nacos](https://github.com/alibaba/Nacos)
 	
 - 服务管理
-    - [dubbo-ops](https://github.com/apache/incubator-dubbo-ops)
+    - [dubbo-admin](https://github.com/apache/dubbo-admin)
+    
+- 服务熔断
+    - [Hystrix](https://github.com/Netflix/Hystrix)
 
 ### *计划整合*
 
@@ -33,7 +36,7 @@
 
 - 分布式事务
 	- [hmily](https://github.com/yu199195/hmily)
-	- [fescar](https://github.com/alibaba/fescar)
+	- [seata](https://github.com/seata/seata)
 
 - 服务监控
 
@@ -42,11 +45,10 @@
 
 - 服务熔断
 	- [Sentinel](https://github.com/alibaba/Sentinel)
-	- [Hystrix](https://github.com/Netflix/Hystrix)
 
 - 服务配置中心
 	- [apollo](https://github.com/ctripcorp/apollo)
-	- [Nacos](https://github.com/alibaba/Nacos)
+	- [nacos](https://github.com/alibaba/Nacos)
 
 - 链路跟踪
 	- [zipkin](https://github.com/openzipkin/zipkin)
