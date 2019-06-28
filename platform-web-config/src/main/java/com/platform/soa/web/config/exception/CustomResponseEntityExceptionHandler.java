@@ -1,5 +1,9 @@
 package com.platform.soa.web.config.exception;
 
+import com.platform.soa.common.exception.ApiException;
+import com.platform.soa.common.exception.ExceptionErrorCodeProvider;
+import com.platform.soa.common.exception.ResultMessage;
+import com.platform.soa.common.exception.SimpleException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 import java.util.List;
-import static com.platform.soa.web.config.exception.ApiException.DEFAULT_ERROR_CODE;
+import static com.platform.soa.common.exception.ApiException.DEFAULT_ERROR_CODE;
 
 /**
  * customize the JSON document to return for a particular controller and/or exception type.

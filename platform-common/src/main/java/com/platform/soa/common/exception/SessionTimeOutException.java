@@ -1,4 +1,4 @@
-package com.platform.soa.web.config.exception;
+package com.platform.soa.common.exception;
 
 /**
  * 业务模块自定义异常
