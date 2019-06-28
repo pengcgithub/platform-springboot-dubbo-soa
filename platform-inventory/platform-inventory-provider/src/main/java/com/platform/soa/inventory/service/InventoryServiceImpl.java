@@ -1,11 +1,11 @@
 package com.platform.soa.inventory.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.platform.soa.inventory.api.InventoryService;
 import com.platform.soa.inventory.dao.InventoryDao;
 import com.platform.soa.inventory.domain.InventoryBean;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 

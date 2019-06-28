@@ -16,7 +16,6 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <dubbo.boot.version>0.2.1-SNAPSHOT</dubbo.boot.version>
     </properties>
 
     <dependencies>
@@ -62,12 +61,12 @@
         </dependency>
         <!-- Dubbo dependency -->
         <dependency>
-            <groupId>com.alibaba</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
         </dependency>
         <!-- Dubbo Spring Boot Starter -->
         <dependency>
-            <groupId>com.alibaba.boot</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
         </dependency>
         <!-- Spring Context Extras -->
@@ -80,22 +79,15 @@
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
         </dependency>
-        <!-- 解决启动报 java.lang.NoClassDefFoundError: org/apache/curator/RetryPolicy -->
-        <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-framework</artifactId>
-            <type>bundle</type>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-recipes</artifactId>
-            <type>bundle</type>
-        </dependency>
         <!-- Dubbo Nacos registry dependency -->
         <dependency>
-            <groupId>com.alibaba</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-registry-nacos</artifactId>
-            <version>0.0.1</version>
+        </dependency>
+        <!-- nacos-client -->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
         </dependency>
         <!-- hmily-dubbo -->
         <dependency>
@@ -116,6 +108,11 @@
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
+        <!-- hystrix -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
     </dependencies>
 

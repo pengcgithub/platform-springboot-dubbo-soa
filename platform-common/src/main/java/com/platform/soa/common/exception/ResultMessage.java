@@ -1,4 +1,4 @@
-package com.platform.soa.web.config.exception;
+package com.platform.soa.common.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

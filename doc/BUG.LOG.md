@@ -20,6 +20,10 @@
 
 **解决方法：**[https://blog.csdn.net/qq_30558809/article/details/79985059](https://blog.csdn.net/qq_30558809/article/details/79985059)
 
+6、升级dubbo 2.7.1整合nacos报错，Nacos with dubbo can't change dubbo dependency to apache dubbo.
+
+**解决方法：**[https://github.com/apache/incubator-dubbo/issues/3797](https://github.com/apache/incubator-dubbo/issues/3797)
+
 ## 参考资料
 
 - [https://gitee.com/cb_1234/cemb-ssm](https://gitee.com/cb_1234/cemb-ssm)

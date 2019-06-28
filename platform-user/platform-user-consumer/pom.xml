@@ -54,12 +54,12 @@
         </dependency>
         <!-- Dubbo dependency -->
         <dependency>
-            <groupId>com.alibaba</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
         </dependency>
         <!-- Dubbo Spring Boot Starter -->
         <dependency>
-            <groupId>com.alibaba.boot</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
         </dependency>
         <!-- Spring Context Extras -->
@@ -87,22 +87,15 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
         </dependency>
-        <!-- 解决启动报 java.lang.NoClassDefFoundError: org/apache/curator/RetryPolicy -->
-        <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-framework</artifactId>
-            <type>bundle</type>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-recipes</artifactId>
-            <type>bundle</type>
-        </dependency>
         <!-- Dubbo Nacos registry dependency -->
         <dependency>
-            <groupId>com.alibaba</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-registry-nacos</artifactId>
-            <version>0.0.1</version>
+        </dependency>
+        <!-- nacos-client -->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
         </dependency>
         <!-- web-config -->
         <dependency>
@@ -111,9 +104,14 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!-- hmily-spring-boot-starter-dubbo -->
+        <!--<dependency>-->
+            <!--<groupId>org.dromara</groupId>-->
+            <!--<artifactId>hmily-spring-boot-starter-dubbo</artifactId>-->
+        <!--</dependency>-->
+        <!-- hystrix -->
         <dependency>
-            <groupId>org.dromara</groupId>
-            <artifactId>hmily-spring-boot-starter-dubbo</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
     </dependencies>
 

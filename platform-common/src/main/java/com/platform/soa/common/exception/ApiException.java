@@ -1,4 +1,4 @@
-package com.platform.soa.web.config.exception;
+package com.platform.soa.common.exception;
 
 
 public abstract class ApiException extends RuntimeException implements ErrorCoded {

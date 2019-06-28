@@ -1,4 +1,4 @@
-package com.platform.soa.web.config.exception;
+package com.platform.soa.common.exception;
 
 import com.alibaba.fastjson.JSON;
 import org.springframework.core.MethodParameter;

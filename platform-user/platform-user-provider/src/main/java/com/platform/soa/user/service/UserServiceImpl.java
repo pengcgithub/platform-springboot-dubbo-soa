@@ -1,10 +1,12 @@
 package com.platform.soa.user.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.platform.soa.user.api.UserService;
 import com.platform.soa.user.domain.UserBean;
 import com.platform.soa.user.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.Service;
 import org.dromara.hmily.annotation.Hmily;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.math.BigDecimal;
@@ -31,6 +33,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
+    @HystrixCommand(commandProperties = {
+            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"),
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000") })
     @Override
     public UserBean findById(String id) {
         UserBean userBean = userMapper.selectByPrimaryKey(id);

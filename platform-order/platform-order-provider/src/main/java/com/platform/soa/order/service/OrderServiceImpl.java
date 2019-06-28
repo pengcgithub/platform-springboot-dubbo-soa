@@ -1,10 +1,10 @@
 package com.platform.soa.order.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.platform.soa.order.api.OrderService;
 import com.platform.soa.order.dao.OrderDao;
 import com.platform.soa.order.domain.OrderBean;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
